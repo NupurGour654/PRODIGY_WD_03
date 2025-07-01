@@ -59,6 +59,11 @@ document.addEventListener("DOMContentLoaded", function() {
     cells.forEach((cell, index) => {
         cell.addEventListener('click', () => handleClick(index));
     });
+    cell.addEventListener('keydown', (e) => {
+  if ((e.key === 'Enter' || e.key === ' ') && gameActive && board[index] === '') {
+    handleClick(index);
+  }
+});
 
     resetButton.addEventListener('click', resetGame);
 });
