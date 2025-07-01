@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 };
+
     // Reset the game to initial state
         const resetGame = () => {
         board = ['', '', '', '', '', '', '', '', ''];
