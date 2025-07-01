@@ -121,5 +121,10 @@ h1 {
     opacity: 1;
   }
 }
+.cell:focus,
+#reset-btn:focus {
+  outline: 2px solid #7999ae;
+  outline-offset: 2px;
+}
 
 
