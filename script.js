@@ -24,6 +24,9 @@ document.addEventListener("DOMContentLoaded", function() {
             if (board[a] && board[a] === board[b] && board[a] === board[c]) {
                 gameActive = false;
                 message.textContent = `${currentPlayer} wins!`;
+                cells[a].classList.add('win');
+               cells[b].classList.add('win');
+               cells[c].classList.add('win');
                 break;
             }
         }
@@ -48,8 +51,9 @@ document.addEventListener("DOMContentLoaded", function() {
         gameActive = true;
         message.textContent = '';
         cells.forEach(cell => {
-            cell.textContent = '';
-        });
+        cell.classList.remove('win');
+});
+
     };
 
     cells.forEach((cell, index) => {
