@@ -51,6 +51,8 @@ h1 {
 
 .cell:hover {
     background-color: #7999ae; /* Background color on hover */
+  transform: scale(1.05);
+
 }
 
 /* Message styles */
