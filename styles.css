@@ -11,6 +11,7 @@ body {
     height: 100vh;
     background-color: #4b4545; /* Background color for the entire page */
     margin: 0;
+  padding: 20px; 
 }
 
 .container {
