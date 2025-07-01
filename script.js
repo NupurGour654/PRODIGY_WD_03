@@ -35,17 +35,24 @@ document.addEventListener("DOMContentLoaded", function() {
             message.textContent = "It's a draw!";
         }
     };
-
     const handleClick = (index) => {
-        if (gameActive && board[index] === '') {
-            board[index] = currentPlayer;
-            cells[index].textContent = currentPlayer;
-            checkWin();
-            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-        }
-    };
+    if (!gameActive) {
+        message.textContent = 'Game over! Click Reset to play again.';
+        return;
+    }
 
-    const resetGame = () => {
+    if (board[index] === '') {
+        board[index] = currentPlayer;
+        cells[index].textContent = currentPlayer;
+        checkWin();
+
+        if (gameActive) {
+            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+            message.textContent = `Turn: ${currentPlayer}`;
+        }
+    }
+};
+        const resetGame = () => {
         board = ['', '', '', '', '', '', '', '', ''];
         currentPlayer = 'X';
         gameActive = true;
