@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         [2, 4, 6]
     ];
 
+    // Check if a player has won
     const checkWin = () => {
         for (let combination of winningCombinations) {
             const [a, b, c] = combination;
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
             message.textContent = "It's a draw!";
         }
     };
+    // Check if a player has won
     const handleClick = (index) => {
     if (!gameActive) {
         message.textContent = 'Game over! Click Reset to play again.';
@@ -52,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 };
+    // Reset the game to initial state
         const resetGame = () => {
         board = ['', '', '', '', '', '', '', '', ''];
         currentPlayer = 'X';
