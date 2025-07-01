@@ -47,6 +47,7 @@ h1 {
     font-size: 2rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+  
 }
 
 .cell:hover {
@@ -81,10 +82,15 @@ h1 {
 /* Player marker styles */
 .cell.X {
     color: #e74c3c; /* Red color for X */
+    animation: pop 0.2s ease;
+
 }
 
 .cell.O {
     color: #7999ae; /* Blue color for O */
+  animation: pop 0.2s ease;
+
+
 }
 @media (max-width: 400px) {
   #game-board {
@@ -101,4 +107,15 @@ h1 {
     width: 100%;
   }
 }
+@keyframes pop {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 
