@@ -1,5 +1,5 @@
 # PRODIGY_WD_03
-This repository contains the code for a responsive Tic Tac Toe game built using HTML-5, CSS, and JavaScript.ejqwhejchql4j23k4j
+This repository contains the code for a responsive Tic Tac Toe game built using HTML-5, CSS, and JavaScript.
 
 Features
 Responsive design for a smooth playing experience on all devices.
