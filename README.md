@@ -11,7 +11,7 @@ Detection of wins, draws, and game over conditions.
 Technologies Used
 HTML: Defines the structure of the game board and user interface elements.
 CSS: Styles the game board, cells, and text for a visually appealing experience.
-JavaScript: Handles game logic, player turns, win detection, and overall game flow.hj432i4iuio13
+JavaScript: Handles game logic, player turns, win detection, and overall game flow.
 
 Contributing
 Feel free to fork this repository and make improvements! Here are some ways you can contribute:
