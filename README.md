@@ -5,7 +5,7 @@ Features
 Responsive design for a smooth playing experience on all devices.
 Single player mode against a computer AI (optional).
 Two player mode for head-to-head competition.
-Clear visual indication of the current player and game state.nbfkjwfjw
+Clear visual indication of the current player and game state.
 Detection of wins, draws, and game over conditions.
 
 Technologies Used
